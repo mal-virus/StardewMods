@@ -5,8 +5,8 @@
 *.sln.docstates
 
 # oauth resources
-TwitchInfoDesigner.cs
-TwitchInfo.resx
+TwitchCompatibility/TwitchInfoDesigner.cs
+TwitchCompatibility/TwitchInfo.resx
 
 # build results
 [Dd]ebug/
