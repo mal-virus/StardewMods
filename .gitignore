@@ -4,6 +4,10 @@
 *.userosscache
 *.sln.docstates
 
+# oauth resources
+TwitchInfoDesigner.cs
+TwitchInfo.resx
+
 # build results
 [Dd]ebug/
 [Rr]elease/
