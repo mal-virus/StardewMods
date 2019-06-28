@@ -1,0 +1,10 @@
+{
+  "Name": "TwitchCompatibility",
+  "Author": "MalVirus",
+  "Version": "1.0.0",
+  "Description": "Add Twitch Integration to your Stardew Valley game to enable twitch chat, alerts, and donation incentives.",
+  "UniqueID": "MalVirus.TwitchCompatibility",
+  "EntryDll": "TwitchCompatibility.dll",
+  "MinimumApiVersion": "2.10.0",
+  "UpdateKeys": []
+}
