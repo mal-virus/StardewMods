@@ -17,6 +17,18 @@ namespace TwitchCompatibility
         readonly ConnectionCredentials credentials = new ConnectionCredentials(TwitchInfo.BotUsername, TwitchInfo.BotToken);
         TwitchClient client;
 
+        public ModEntry modRef;
+
+        public void TwitchWrapper()
+        {
+
+            Connect();
+
+            Console.ReadLine();
+
+            Disconnect();
+        }
+
         internal void Connect()
         {
             Console.WriteLine("connecting...");
@@ -30,8 +42,20 @@ namespace TwitchCompatibility
             client.Connect();
         }
 
+        internal void Disconnect()
+        {
+            Console.WriteLine("disconnecting...");
+        }
+
+        public void SVEventCaller(String message)
+        {
+            modRef.Monitor.Log(message);
+        }
+
         private void Client_OnMessageReceived(object sender, OnMessageReceivedArgs e)
         {
+            SVEventCaller(e.ChatMessage.Message.ToString());
+
             if (e.ChatMessage.Message.StartsWith("hi", StringComparison.InvariantCultureIgnoreCase))
             {
                 client.SendMessage($"Hey there {e.ChatMessage.DisplayName}");
@@ -46,12 +70,6 @@ namespace TwitchCompatibility
         private void Client_OnConnectionError(object sender, OnConnectionErrorArgs e)
         {
             Console.WriteLine($"Error!! {e.Error}");
-        }
-
-        
-        internal void Disconnect()
-        {
-            Console.WriteLine("disconnecting...");
         }
     }
 }
