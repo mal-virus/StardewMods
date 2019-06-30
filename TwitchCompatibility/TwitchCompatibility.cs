@@ -25,7 +25,7 @@ namespace TwitchCompatibility
             };
             bot.TwitchWrapper();
 
-            helper.Events.Input.ButtonPressed += this.OnButtonPressed;
+            // helper.Events.Input.ButtonPressed += this.OnButtonPressed;
         }
 
         /*********

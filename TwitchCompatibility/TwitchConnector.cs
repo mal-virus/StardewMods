@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Drawing;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using TwitchLib;
 using TwitchLib.Models.Client;
 using TwitchLib.Events.Client;
@@ -7,6 +10,7 @@ using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
+using StardewValley.Menus;
 
 
 namespace TwitchCompatibility
@@ -24,14 +28,17 @@ namespace TwitchCompatibility
 
             Connect();
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
-            Disconnect();
+            if (modRef.Monitor.IsExiting == true)
+            {
+                Disconnect();
+            }
         }
 
         internal void Connect()
         {
-            Console.WriteLine("connecting...");
+            modRef.Monitor.Log("connecting...");
 
             client = new TwitchClient(credentials, TwitchInfo.ChannelName, logging: false);
             client.OnLog += Client_OnLog;
@@ -44,22 +51,36 @@ namespace TwitchCompatibility
 
         internal void Disconnect()
         {
-            Console.WriteLine("disconnecting...");
+            modRef.Monitor.Log("disconnecting...");
         }
 
-        public void SVEventCaller(String message)
+        /// <summary>Method controlling interaction with Twitch Chat Messages for Stardew Mod</summary>
+        /// <param name="message">The message passed from the Client_OnMessageRecieved Method.</param>
+        public void OnChatMessage(TwitchLib.Models.Client.ChatMessage message)
         {
-            modRef.Monitor.Log(message);
+            // modRef.Monitor.Log($"[{message.DisplayName.ToString()}] {message.Message.ToString()}");
+            
+            if (Context.IsWorldReady)
+            {
+                Game1.chatBox.addMessage($"[{message.DisplayName.ToString()}] {message.Message.ToString()}", ColorConverter(message.Color));
+            }
+        }
+
+        // Helper function to convert System.Drawing.Color object to Xna.Framework.color object
+        // !TODO: Proper documentation for this method
+        private Microsoft.Xna.Framework.Color ColorConverter(System.Drawing.Color color)
+        {
+            return new Microsoft.Xna.Framework.Color(color.R, color.G, color.B);
         }
 
         private void Client_OnMessageReceived(object sender, OnMessageReceivedArgs e)
         {
-            SVEventCaller(e.ChatMessage.Message.ToString());
+            OnChatMessage(e.ChatMessage);
 
-            if (e.ChatMessage.Message.StartsWith("hi", StringComparison.InvariantCultureIgnoreCase))
-            {
-                client.SendMessage($"Hey there {e.ChatMessage.DisplayName}");
-            }
+            //if (e.ChatMessage.Message.StartsWith("hi", StringComparison.InvariantCultureIgnoreCase))
+            //{
+            //    client.SendMessage($"Hey there {e.ChatMessage.DisplayName}");
+            //}
         }
 
         private void Client_OnLog(object sender, OnLogArgs e)
