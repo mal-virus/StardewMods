@@ -17,9 +17,11 @@ namespace TwitchCompatibility
         /// <param name="helper">Provides simplified APIs for writing mods.</param>
         public override void Entry(IModHelper helper)
         {
+            TwitchConnector bot = new TwitchConnector();
+            bot.Connect();
+
             helper.Events.Input.ButtonPressed += this.OnButtonPressed;
         }
-
 
         /*********
         ** Private methods
