@@ -14,14 +14,14 @@ namespace TwitchCompatibility
     internal class TwitchConnector
     {
 
-        readonly ConnectionCredentials credentials = new ConnectionCredentials(TwitchInfo.BotUsername, TwitchInfo.BotToken);
+        readonly ConnectionCredentials credentials = new ConnectionCredentials(TwitchInfo.ChannelName, TwitchInfo.BotToken);
         TwitchClient client;
 
         internal void Connect()
         {
             Console.WriteLine("connecting...");
 
-            client = new TwitchClient(credentials, TwitchInfo.BotUsername, logging: false);
+            client = new TwitchClient(credentials, TwitchInfo.ChannelName, logging: false);
             client.OnLog += Client_OnLog;
             client.OnConnectionError += Client_OnConnectionError;
 
