@@ -20,12 +20,6 @@ namespace TwitchCompatibility
             TwitchConnector bot = new TwitchConnector();
             bot.Connect();
 
-            Console.ReadLine();
-
-            bot.Disconnect();
-
-            
-
             helper.Events.Input.ButtonPressed += this.OnButtonPressed;
         }
 

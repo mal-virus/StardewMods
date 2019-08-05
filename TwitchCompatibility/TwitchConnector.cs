@@ -21,7 +21,7 @@ namespace TwitchCompatibility
         {
             Console.WriteLine("connecting...");
 
-            client = new TwitchClient(credentials, TwitchInfo.ChannelName, logging: false);
+            client = new TwitchClient(credentials, TwitchInfo.BotUsername, logging: false);
             client.OnLog += Client_OnLog;
             client.OnConnectionError += Client_OnConnectionError;
 
@@ -36,6 +36,7 @@ namespace TwitchCompatibility
             {
                 client.SendMessage($"Hey there {e.ChatMessage.DisplayName}");
             }
+
         }
 
         private void Client_OnLog(object sender, OnLogArgs e)
