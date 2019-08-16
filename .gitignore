@@ -1,12 +1,12 @@
 # user-specific files
+**/.DS_STORE
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
 # oauth resources
-TwitchCompatibility/TwitchInfo.Designer.cs
-TwitchCompatibility/TwitchInfo.resx
+**/config.json
 
 # build results
 [Dd]ebug/
