@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{C7492ABD-17CC-44BA-A97D-16432D90CC75}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="LooseSprites\" />
+    <Folder Include="PNG\" />
+    <Folder Include="Portraits\" />
+    <Folder Include="Monsters\" />
+    <Folder Include="Characters\" />
+    <Folder Include="Animals\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="originals\More Monster Pokemon-1264-1-2\Glalie\Skeleton.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Glalie\Skeleton.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Squid Kid.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Mummy.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Wilderness Golem.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Shadow Shaman.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Lava Bat.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Shadow Brute.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Dust Spirit.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Skeleton.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\PNG\Serpent.png" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Squid Kid.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Mummy.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Wilderness Golem.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Shadow Shaman.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Shadow Brute.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Lava Bat.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Skeleton.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Dust Spirit.xnb" />
+    <None Include="originals\More Monster Pokemon-1264-1-2\Monsters\Serpent.xnb" />
+    <None Include="originals\Pokemon Animal Texture\BabyRabbit.xnb" />
+    <None Include="originals\Pokemon Animal Texture\Duck.xnb" />
+    <None Include="originals\Pokemon Animal Texture\Rabbit.xnb" />
+    <None Include="originals\Pokemon Animal Texture\BabyVoid Chicken.xnb" />
+    <None Include="originals\Pokemon Animal Texture\Void Chicken.xnb" />
+    <None Include="originals\Pokemon Animal Texture\BabyBrown Chicken.xnb" />
+    <None Include="originals\Pokemon Animal Texture\BabyWhite Chicken.xnb" />
+    <None Include="originals\Pokemon Animal Texture\ShearedSheep.xnb" />
+    <None Include="originals\Pokemon Animal Texture\BabyBlue Chicken.xnb" />
+    <None Include="originals\Pokemon Animal Texture\White Chicken.xnb" />
+    <None Include="originals\Pokemon Animal Texture\Brown Chicken.xnb" />
+    <None Include="originals\Pokemon Animal Texture\Blue Chicken.xnb" />
+    <None Include="originals\Pokemon Monsters Texture\Iridium Crab.xnb" />
+    <None Include="originals\Pokemon Monsters Texture\Wilderness Golem.xnb" />
+    <None Include="originals\Pokemon Monsters Texture\Green Slime.xnb" />
+    <None Include="originals\Pokemon Monsters Texture\Carbon Ghost.xnb" />
+    <None Include="originals\Pokemon Monsters Texture\Duggy.xnb" />
+    <None Include="originals\Pokemon Monsters Texture\Bat.xnb" />
+    <None Include="originals\Pokemon Monsters Texture\Serpent.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\LooseSprites\Cursors.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Portraits\Krobus.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\BabyBrown Cow.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\BabyRabbit.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\horse.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\BabyWhite Cow.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\dog.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\Rabbit.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\BabyPig.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\Void Chicken.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\Dinosaur.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\White Cow.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\Brown Cow.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\cat.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\White Chicken.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\Pig.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\Brown Chicken.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Animals\Blue Chicken.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Characters\Krobus.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Characters\Farmer\hats.xnb" />
+    <None Include="originals\Pokemon Retextures-325-1-2b\Characters\Farmer\shirts.xnb" />
+    <None Include="originals\more pokemon retextures\portraits\Leah.xnb" />
+    <None Include="originals\more pokemon retextures\portraits\Clint.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\BabyBrown Cow.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\Duck.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\Rabbit.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\BabyPig.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\BabyVoid Chicken.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\Void Chicken.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\Dinosaur.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\Brown Cow.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\BabyGoat.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\Goat.xnb" />
+    <None Include="originals\more pokemon retextures\Animals\Pig.xnb" />
+    <None Include="originals\more pokemon retextures\characters\Toddler.xnb" />
+    <None Include="originals\more pokemon retextures\characters\Toddler_girl.xnb" />
+    <None Include="originals\more pokemon retextures\characters\Leah.xnb" />
+    <None Include="originals\more pokemon retextures\characters\Clint.xnb" />
+    <None Include="originals\more pokemon retextures\characters\Toddler_dark.xnb" />
+    <None Include="originals\more pokemon retextures\characters\Toddler_girl_dark.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Frost Bat.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Squid Kid.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Fly.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Mummy.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Stone Golem.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Big Slime.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Metal Head.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Ghost.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Armored Bug.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Shadow Girl.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Shadow Shaman.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Rock Crab.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Shadow Brute.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Frog.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Skeleton Mage.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Skeleton.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Lava Crab.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Bug.xnb" />
+    <None Include="originals\more pokemon retextures\Monsters\Grub.xnb" />
+    <None Include="manifest.json" />
+    <None Include="content.json" />
+  </ItemGroup>
+</Project>

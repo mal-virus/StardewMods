@@ -1,0 +1,12 @@
+﻿{
+    "Format": "1.9",
+    "ConfigSchema": {
+        "Material": {
+            "AllowValues": "Wood, Metal",
+            "Default": "Wood"
+        }
+    },
+    "Changes": [
+
+        ]
+}

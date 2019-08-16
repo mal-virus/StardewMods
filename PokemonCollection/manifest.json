@@ -1,0 +1,11 @@
+{
+  "Name": "[CP] Pokemon Collection",
+  "Author": "MalVirus",
+  "Version": "1.0",
+  "Description": "A collection of Pokemon Mods reconfigured for content patcher. All credit goes to the original modders.",
+  "UniqueID": "MalVirus.PokemonCollection",
+  "UpdateKeys": [ ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
