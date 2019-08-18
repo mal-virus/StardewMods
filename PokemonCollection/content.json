@@ -1,12 +1,283 @@
 ﻿{
     "Format": "1.9",
     "ConfigSchema": {
-        "Material": {
-            "AllowValues": "Wood, Metal",
-            "Default": "Wood"
+        "Skeleton": {
+            "AllowValues": "froslass, glacie",
+            "Default": "froslass"
+        },
+        "Serpent": {
+            "AllowValues": "arbok, noivern",
+            "Default": "arbok"
+        },
+        "Squid Kid": {
+            "AllowValues": "shedinja, misdreavus",
+            "Default": "misdreavus"
+        },
+        "Dinosaur": {
+            "AllowValues": "shieldon, omanyte",
+            "Default": "omanyte"
         }
     },
     "Changes": [
-
-        ]
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyBlue Chicken",
+            "FromFile": "assets/Animals/tailow.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyBrown Chicken",
+            "FromFile": "assets/Animals/pidgey.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyRabbit",
+            "FromFile": "assets/Animals/buneary.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyVoid Chicken",
+            "FromFile": "assets/Animals/murkrow.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyWhite Chicken",
+            "FromFile": "assets/Animals/rufflet.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyWhite Cow",
+            "FromFile": "assets/Animals/miltank.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Blue Chicken",
+            "FromFile": "assets/Animals/swellow.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Brown Chicken",
+            "FromFile": "assets/Animals/pidgeotto.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Duck",
+            "FromFile": "assets/Animals/ducklett.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rabbit",
+            "FromFile": "assets/Animals/lopunny.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Void Chicken",
+            "FromFile": "assets/Animals/honchkrow.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/ShearedSheep",
+            "FromFile": "assets/Animals/flaafySheared.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/White Chicken",
+            "FromFile": "assets/Animals/braviary.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Sheep",
+            "FromFile": "assets/Animals/flaafy.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabySheep",
+            "FromFile": "assets/Animals/mareep.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/White Cow",
+            "FromFile": "assets/Animals/miltank.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyPig",
+            "FromFile": "assets/Animals/swinub.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyBrown Cow",
+            "FromFile": "assets/Animals/numel.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Brown Cow",
+            "FromFile": "assets/Animals/camerupt.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Dinosaur",
+            "FromFile": "assets/Animals/{{dinosaur}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Horse",
+            "FromFile": "assets/Animals/meganium.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Pig",
+            "FromFile": "assets/Animals/piloswine.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BabyGoat",
+            "FromFile": "assets/Animals/tauros.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Goat",
+            "FromFile": "assets/Animals/tauros.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Dust Spirit",
+            "FromFile": "assets/Monsters/snorunt.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Lava Bat",
+            "FromFile": "assets/Monsters/crobat.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Mummy",
+            "FromFile": "assets/Monsters/cofagrigus.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Serpent",
+            "FromFile": "assets/Monsters/{{serpent}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Shadow Brute",
+            "FromFile": "assets/Monsters/haunter.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Shadow Shaman",
+            "FromFile": "assets/Monsters/duskull2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Skeleton",
+            "FromFile": "assets/Monsters/{{skeleton}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Squid Kid",
+            "FromFile": "assets/Monsters/{{squid kid}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Wilderness Golem",
+            "FromFile": "assets/Monsters/dusknoir.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Bat",
+            "FromFile": "assets/Monsters/zubat.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Carbon Ghost",
+            "FromFile": "assets/Monsters/duskull1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Duggy",
+            "FromFile": "assets/Monsters/diglett.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Green Slime",
+            "FromFile": "assets/Monsters/ditto.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Iridium Crab",
+            "FromFile": "assets/Monsters/parasect.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Armored Bug",
+            "FromFile": "assets/Monsters/magnemite.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Bug",
+            "FromFile": "assets/Monsters/magnemite.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Big Slime",
+            "FromFile": "assets/Monsters/muk.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Grub",
+            "FromFile": "assets/Monsters/venonat.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Fly",
+            "FromFile": "assets/Monsters/venomoth.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Frog",
+            "FromFile": "assets/Monsters/poliwag.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Frost Bat",
+            "FromFile": "assets/Monsters/golbat.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Ghost",
+            "FromFile": "assets/Monsters/ghastly.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Lava Crab",
+            "FromFile": "assets/Monsters/dwebble.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Metal Head",
+            "FromFile": "assets/Monsters/aron.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Rock Crab",
+            "FromFile": "assets/Monsters/dwebble.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Shadow Girl",
+            "FromFile": "assets/Monsters/lileep.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Skeleton Mage",
+            "FromFile": "assets/Monsters/spiritomb.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Monsters/Stone Golem",
+            "FromFile": "assets/Monsters/larvitar.png"
+        }
+    ]
 }
